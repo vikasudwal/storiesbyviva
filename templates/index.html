@@ -1,100 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coming Soon — Wedding Photography</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#f7f5f2;
-      --fg:#1d1d1f;
-      --muted:#6b7280;
-      --accent:#d4af37; /* subtle gold */
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; 
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-      color:var(--fg);
-      background:
-        radial-gradient(60rem 60rem at 120% -10%, #ffffff 0%, transparent 60%),
-        radial-gradient(50rem 50rem at -20% 110%, #ffffff 0%, transparent 60%),
-        var(--bg);
-      display:grid; 
-      place-items:center;
-    }
-    .card{
-      width:min(880px, 92vw);
-      background:#ffffffcc;
-      backdrop-filter: blur(6px);
-      border:1px solid #eee;
-      border-radius:24px;
-      padding: clamp(2rem, 4vw, 3.25rem);
-      text-align:center;
-      box-shadow: 0 10px 40px rgba(0,0,0,.06);
-    }
-    .brand{ 
-      font-family: "Playfair Display", serif; 
-      font-size: clamp(1rem, 2.4vw, 1.15rem); 
-      letter-spacing:.18em; 
-      text-transform: uppercase; 
-      color: var(--muted);
-      margin-bottom: .75rem;
-    }
-    h1{
-      font-family: "Playfair Display", serif;
-      font-size: clamp(2.25rem, 7vw, 4rem);
-      line-height: 1.05;
-      margin: .25rem 0 1rem;
-    }
-    .divider{
-      width: 160px;
-      margin: 1.25rem auto 1.5rem;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--accent), transparent);
-      position: relative;
-    }
-    .divider::before, .divider::after{
-      content: "";
-      position: absolute; top: -6px; width: 10px; height: 10px; border-radius: 50%;
-      border: 2px solid var(--accent); background:#fff;
-    }
-    .divider::before{ left: -5px; }
-    .divider::after{ right: -5px; }
-
-    p{ margin: .5rem 0; font-size: clamp(1rem, 1.6vw, 1.125rem); color: var(--muted);}    
-    .lines{ margin-top: .75rem; }
-    .lines .line{ opacity:.95; }
-    .lines .line + .line{ opacity:.85; }
-    .lines .line + .line + .line{ opacity:.75; }
-
-    .footer{ margin-top: 1.75rem; font-size:.95rem; }
-    .footer a{ color: var(--fg); text-underline-offset: 3px; }
-
-    /* optional: simple fade-in */
-    .card{ animation: fade 700ms ease-out both; }
-    @keyframes fade{ from{ opacity:0; transform: translateY(8px); } to{ opacity:1; transform:none; } }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories by Viva - Coming Soon</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
 </head>
 <body>
-  <main class="card" role="main" aria-labelledby="title">
-    <div class="brand">Wedding Photography</div>
-    <h1 id="title">Coming&nbsp;Soon</h1>
-    <div class="divider" aria-hidden="true"></div>
-
-    <div class="lines" aria-label="Details">
-      <p class="line">Capturing love stories in timeless frames.</p>
-      <p class="line">New website is getting its final polish.</p>
-      <p class="line">Bookings & inquiries are open meanwhile.</p>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Stories by Viva" class="logo">
+        <h2 class="headline">Every Story Deserves to be told.</h2>
+        <h1 class="coming-soon">COMING SOON</h1>
     </div>
-
-    <div class="footer">
-      <p>Write to <a href="mailto:hello@example.com">hello@example.com</a> · Instagram: <a href="#" aria-label="Instagram profile">@yourstudio</a></p>
-    </div>
-  </main>
 </body>
 </html>

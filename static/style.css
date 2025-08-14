@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap');
+
+/* When you send me your font files, I will replace these @import lines with @font-face */
+
+body {
+    background-color: #682E2E; /* Dark maroon */
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin: 10px 0 40px;
+}
+
+.headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.coming-soon {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    font-weight: 400;
+}
